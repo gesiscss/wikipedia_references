@@ -7,7 +7,6 @@ dependencies:
   - numpy
   - jupyterlab
   - qgrid
-  - pandas-datareader>=0.5.0
   - pip
   - pip:
     - ipywidgets
