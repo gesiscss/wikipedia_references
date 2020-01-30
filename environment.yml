@@ -1,13 +1,14 @@
 name: example-environment
 channels:
   - conda-forge
+  - defaults
 dependencies:
   - python=3.7
   - numpy
   - jupyterlab
   - qgrid
+  - pandas-datareader>=0.5.0
   - pip
   - pip:
-    - pandas
     - ipywidgets
     - jupyter_contrib_nbextensions
