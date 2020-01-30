@@ -3,7 +3,6 @@ channels:
   - conda-forge
 dependencies:
   - python=3.7
-  - jupyterlab>=1.0
   - numpy
   - pip
   - pip:
