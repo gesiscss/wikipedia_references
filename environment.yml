@@ -10,3 +10,4 @@ dependencies:
     - qgrid
     - pandas
     - ipywidgets
+    - jupyter_contrib_nbextensions
