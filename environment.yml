@@ -5,7 +5,7 @@ channels:
 dependencies:
   - jupyterlab
   - qgrid
-  - pandas-datareader>=0.5.0
+  - pandas=0.25.3
   - pip
   - pip:
     - ipywidgets
