@@ -1,2 +1,5 @@
 jupyter labextension install @jupyter-widgets/jupyterlab-manager qgrid
 jupyter nbextension enable --py widgetsnbextension
+
+# download json_archive.zip
+# wget --quiet --output-document=json_archive.zip <url-to-download-json_archive.zip>
