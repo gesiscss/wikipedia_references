@@ -15,9 +15,14 @@ Each file is represented as list of “References”. Each references is a dicti
 * "del" type: List of Integers, list of revisions where reference was deleted from the article or reference was modified in a way that less than 25% of tokens remained, 
 * "del_editor“ type: List of Strings, list of user_id or IP addresses of editors where reference was deleted or reference was modified in a way that less than 25% of tokens remained 
 * "modif" type: List of Integers, list of revisions where reference was modified, or reinserted with modification
+* "hashes": type: List of Strings, list of hash values of all versions of references 
+* "first_rev_time": type: datetime, time stamp when the reference was created (the same value is represented in "ins_time” as the first element of the list and in "time" of the first element in the "change_sequence")
+* "ins_time" type: List of datetime, list of time stamps when reference was inserted or reinserted
+* "del_time" type: List of datetime, list of time stamps when reference was deleted 
 * "change_sequence" type: List of Dictionaries, with information about tokens, editors and revisions where reference was modified (the first element represent the first revision where reference was inserted), where:
   * "hash_id" type: String, hash value of the token_id (WikiWho) list of the reference version
   * "rev_id" type: Integer, revision number of the particular version of the reference
   * "editor_id" type: String, user_id or IP address of the revision editor
+  * "time" type: datetime, time stamp when of this particular version of the reference
   * "tokens" type: List of Strings, ordered list of tokens (created by WikiWho) that represents the particular version of the reference (the list has the same length as "token_editors")
   * "token_editors" type: List of Strings, ordered list of user_ids or IP addresses of editors that were first who added the corresponding token (see "tokens") to Wikipedia article 
