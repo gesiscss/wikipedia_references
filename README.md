@@ -2,6 +2,7 @@
 
 [![Binder](https://notebooks.gesis.org/binder/badge_logo.svg)](https://notebooks.gesis.org/binder/v2/gh/gesiscss/wikipedia_references/master)
 
+This examples shows how to process data [1]. To extract document identifiers (DOI, PubMedID, PMC, ISBN, ISSN, ArXiv ID) we used modified version of regular expresions proposed by Halfaker et al. [2].  
 
 The dataset consists of json files where article_id is used as file name.
 
@@ -26,3 +27,7 @@ Each file is represented as list of “References”. Each references is a dicti
   * "time" type: datetime, time stamp when of this particular version of the reference
   * "tokens" type: List of Strings, ordered list of tokens (created by WikiWho) that represents the particular version of the reference (the list has the same length as "token_editors")
   * "token_editors" type: List of Strings, ordered list of user_ids or IP addresses of editors that were first who added the corresponding token (see "tokens") to Wikipedia article 
+
+
+[1] Zagovora, O., Ulloa, R., Weller, K., & Flöck, F. (2017). Edit Histories of References Dataset for the English Wikipedia [Data set]. Zenodo. http://doi.org/10.5281/zenodo.3964990
+[2] https://github.com/halfak/Extract-scholarly-article-citations-from-Wikipedia 
