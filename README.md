@@ -30,4 +30,5 @@ Each file is represented as list of “References”. Each references is a dicti
 
 
 [1] Zagovora, O., Ulloa, R., Weller, K., & Flöck, F. (2017). Edit Histories of References Dataset for the English Wikipedia [Data set]. Zenodo. http://doi.org/10.5281/zenodo.3964990
+
 [2] https://github.com/halfak/Extract-scholarly-article-citations-from-Wikipedia 
